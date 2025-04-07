@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+body{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: "poppins";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* NavSection */
+.navSection{
+  height:100px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(245, 147, 0);
+  align-items: center;
+  color:rgb(89, 42, 11); 
+  padding: 0px 20px;
+  font-size:20px;
+  font-weight: bold;
+  /* box-shadow: 10px 5px 10px black; */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+span:hover{
+  cursor:pointer;
+ opacity: 0.7;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* SideSection */
+.sideBarSection{
+  height:100vh;
+  width:100%;
+  max-width:15%;
+  background-color:  rgb(245, 147, 0);
+  padding-top:50px;
+}
+.sideBarSection ul li{
+  list-style: none;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: medium;
+  cursor: pointer;
+  padding:10px;
+  text-wrap: nowrap;
+}
+.sideBarSection ul li:hover{
+  background-color:  rgb(194, 90, 0);
+}
+.collectionSection{
+  display: flex;
+}
+/* loginSection  */
+.loginSection,.registerSection,.firmSection,.productSection{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 10px;
+}
+.authForm{
+  width:100vh;
+  max-width: 50%;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  gap:20px
 }
-
-.App-link {
-  color: #61dafb;
+.innerAuth{
+  display: flex;
+  justify-content: space-evenly;
 }
+label{
+  width:150px;
+  
+}
+input[type="text"],input[type="password"],input[type="email"],input[type="file"]{
+  padding: 10px;
+  border: none;
+  box-shadow: 2px 2px 5px lightgray;
+  width:300px;
+  text-align: left;
+}
+.category{
+  display: flex;
+  justify-content: space-evenly;
+   width:300px;
+}
+.inner-category{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap:wrap;
+}
+button{
+  padding: 10px 20px;
+  background-color:  rgb(194, 90, 0); 
+  color:black;
+  border: none;
+}
+button:hover{
+  background-color:rgb(245, 147, 0);
+  cursor: pointer;
+}
+.welcom{
+  font-size:50px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin: auto;
+  color:rgb(89, 42, 11);
+  font-weight: bold;
 }
